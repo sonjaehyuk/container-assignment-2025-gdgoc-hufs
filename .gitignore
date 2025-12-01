@@ -1,0 +1,5 @@
+.idea
+venv
+Containerfile
+.containerignore
+__pycache__
