@@ -2,6 +2,7 @@ import asyncio
 import shutil
 import time
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from typing import List
 from pathlib import Path
@@ -23,6 +24,11 @@ class File(BaseModel):
 
 
 app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return FileResponse("index.html")
 
 
 @app.get("/healthz")
