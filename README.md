@@ -19,7 +19,7 @@ FROM python:3.13
 
 ### 과제/목표
 
-이 소스코드로 2개의 이미지로 만드시오.
+이 소스코드로 2개의 이미지를 만드시오.
 * Base 이미지가 [https://hub.docker.com/_/python](https://hub.docker.com/_/python)인 이미지
 * Base 이미지가 본인이 가장 선호하는 리눅스 배포판인 이미지
 
