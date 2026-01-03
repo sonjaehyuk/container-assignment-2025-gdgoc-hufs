@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myservice
+spec:
+  selector:
+    app: myassignment
+    made: sonjaehyuk
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: "TCP"
+  type: LoadBalancer

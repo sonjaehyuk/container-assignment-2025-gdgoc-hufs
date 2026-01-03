@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myassignment-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels: # pod의 labels와 모두 일치해야 합니다.
+      app: myassignment
+      made: sonjaehyuk
+  template: # pod를 지칭합니다.
+    metadata:
+      labels:
+        app: myassignment
+        made: sonjaehyuk
+    spec:
+      containers:
+        - name: myassignment
+          image: assignment:1.1
+          resources:
+            limits:
+              memory: "512Mi"
