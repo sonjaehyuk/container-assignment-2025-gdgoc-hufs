@@ -12,7 +12,7 @@ services:
       start_period: 10s
 
   watcher:
-    image: docker:27-cli
+    image: docker:29-cli
     container_name: myassignment-watcher
     depends_on:
       - app
