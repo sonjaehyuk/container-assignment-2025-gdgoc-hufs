@@ -40,4 +40,4 @@ minikube service myservice
 
 ## HEALTHCHECK
 
-`compose.yaml`의 watcher처럼 컨테이너의 상태를 계속 감시하는 형태로도 사용할 수 있음.
+`docker-compose.yaml`의 watcher처럼 컨테이너의 상태를 계속 감시하는 형태로도 해결할 수 있음.
