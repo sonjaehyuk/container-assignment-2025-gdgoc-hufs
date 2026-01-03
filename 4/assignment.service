@@ -1,0 +1,13 @@
+[Unit]
+Description=My Assignment
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=docker run --name myassignment --memory 512m --memory-swap 512m -p 18888:80 assignment:1.1
+ExecStop=docker stop myassignment
+ExecStopPost=docker rm myassignment
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
