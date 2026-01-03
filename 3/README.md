@@ -8,7 +8,7 @@
 replica가 설정되었다면 replica만큼 아래 요청을 보내면 서비스 불가능을 확인할 수 있음.
 
 ```shell
-curl -X POST http://127.0.0.1:8888/simulate/router-nuke
+curl -X POST http://127.0.0.1:18888/simulate/router-nuke
 ```
 
 ## livenessProbe
